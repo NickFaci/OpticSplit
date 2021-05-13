@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Spam Kahoot Games">
+  <title>Kahoot Spammer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  <h1><span>Kahoot</span></h1>
+  <h2><span>Made by JPennington</a></span></h2>
+  <p>Bots will play the quiz once it starts!</p>
+  <p>Game Pin</p>
+  <input autocomplete="off" id='pin'></input>
+  <p>Number of Bots</p>
+  <input autocomplete="off" id='amount'></input>
+  <p>Bot Name</p>
+  <input autocomplete="off" id='name'></input>
+  <button onclick="sendspam()">Spam</button>
+  <h1>Bot Log:</h1>
+  <div id='fulllog'>
+  <p id="log">...</p>
+  </div>
+  </body>
+</html>
